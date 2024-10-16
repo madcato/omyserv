@@ -2,7 +2,7 @@
 
 This project is a helper to automate the installation of a new Ubuntu server 24.04.
 
-This project is inspired by [@ddh](https://x.com/dhh) [OMAKUB](https://omakub.org)
+This project is inspired by [@ddh](https://x.com/dhh)'s [OMAKUB](https://omakub.org)
 
 ## Software installed by default
 - [X] git 
@@ -22,7 +22,7 @@ This project is inspired by [@ddh](https://x.com/dhh) [OMAKUB](https://omakub.or
 ## Install
 
 ```bash
-wget -qO- https://madcato.org/install | bash
+# wget -qO- https://raw.githubusercontent.com/madcato/omyserv/refs/heads/master/install.sh | bash
 ```
 
 ## Doc
