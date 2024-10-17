@@ -1,0 +1,16 @@
+[Unit]
+Description=Ollama Service
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/ollama serve
+User=ollama
+Group=ollama
+Restart=always
+RestartSec=3
+Environment="PATH=/home/danielvela/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/rocm-6.2.2/bin"
+Environment="OLLAMA_HOST=0.0.0.0"
+Environment=“OLLAMA_MAX_LOADED_MODELS=4”
+
+[Install]
+WantedBy=default.target

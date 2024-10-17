@@ -10,6 +10,7 @@ This project is inspired by [@ddh](https://x.com/dhh)'s [OMAKUB](https://omakub.
 - [ ] resgitry (docker image registry), 
 - [ ] registry with SSL (Let's Encrypt)
 - [X] ollama 
+- [ ] ollama configuration files
 - [X] docker
 - [X] docker-compose
 - [X] dev libraries

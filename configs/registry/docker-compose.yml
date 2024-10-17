@@ -1,9 +1,10 @@
 services:
   registry:
+    restart: always
     image: registry:latest
     ports:
     - "5000:5000"
     environment:
       REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
     volumes:
-      - ./data:/data
+      - /home/danielvela/docker-registry/data:/data
