@@ -1,0 +1,1 @@
+cp ~/.local/share/omyserv/configs/netatalk/afp.conf /etc/netatalk/afp.conf

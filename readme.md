@@ -6,7 +6,7 @@ This project is inspired by [@ddh](https://x.com/dhh)'s [OMAKUB](https://omakub.
 
 ## Software installed by default
 - [X] git 
-- [ ] netatalk (for AFP file sharing)
+- [X] netatalk (for AFP file sharing)
 - [ ] resgitry (docker image registry), 
 - [ ] registry with SSL (Let's Encrypt)
 - [X] ollama 
@@ -22,7 +22,7 @@ This project is inspired by [@ddh](https://x.com/dhh)'s [OMAKUB](https://omakub.
 ## Install
 
 ```bash
-# wget -qO- https://raw.githubusercontent.com/madcato/omyserv/refs/heads/master/install.sh | bash
+# wget -qO- https://raw.githubusercontent.com/madcato/omyserv/refs/heads/master/boot.sh | bash
 ```
 
 ## Doc
