@@ -17,11 +17,11 @@ sudo apt-get install -y git >/dev/null
 echo "Cloning Omyserv repository..."
 rm -rf ~/.local/share/omyserv
 git clone https://github.com/madcato/omyserv.git ~/.local/share/omyserv >/dev/null
-if [[ $OMAKUB_REF != "master" ]]; then
+if [[ $OMYSERV_REF != "master" ]]; then
 	cd ~/.local/share/omyserv
-	git fetch origin "${OMAKUB_REF:-stable}" && git checkout "${OMAKUB_REF:-stable}"
+	git fetch origin "${OMYSERV_REF:-stable}" && git checkout "${OMYSERV_REF:-stable}"
 	cd -
 fi
 
 echo "Installation starting..."
-source ~/.local/share/omakub/install.sh
+source ~/.local/share/omyserv/install.sh 

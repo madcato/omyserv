@@ -2,8 +2,8 @@
 set -e
 
 # Check the distribution name and version and abort if incompatible
-source ./install/check-version.sh
+source ~/.local/share/omyserv/install//check-version.sh
 
 echo "Installing terminal tools..."
 # Install terminal tools
-source ./install/terminal.sh
+source ~/.local/share/omyserv/install//terminal.sh
