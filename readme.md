@@ -22,7 +22,7 @@ This project is inspired by [@ddh](https://x.com/dhh)'s [OMAKUB](https://omakub.
 ## Install
 
 ```bash
-# wget -qO- https://raw.githubusercontent.com/madcato/omyserv/refs/heads/master/boot.sh | bash
+wget -qO- https://raw.githubusercontent.com/madcato/omyserv/refs/heads/master/boot.sh | bash
 ```
 
 ## Doc
