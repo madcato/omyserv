@@ -26,4 +26,10 @@ This project is inspired by [@ddh](https://x.com/dhh)'s [OMAKUB](https://omakub.
 wget -qO- https://raw.githubusercontent.com/madcato/omyserv/refs/heads/master/boot.sh | bash
 ```
 
-## Doc
+## Post installation steps
+
+1. Install ca certificate in macOs client to use `docker login`:
+```bash
+openssl s_client -showcerts -connect micro-atx.local:5000 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > registry-cert.crt
+sudo mv registry-cert.crt /etc/docker/certs.d/micro-atx.local:5000/ca.crt
+```
