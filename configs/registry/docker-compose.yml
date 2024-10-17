@@ -6,5 +6,8 @@ services:
     - "5000:5000"
     environment:
       REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /data
+      REGISTRY_HTTP_TLS_CERTIFICATE: /certs/cert.pem
+      REGISTRY_HTTP_TLS_KEY: /certs/key.pem
     volumes:
-      - /home/danielvela/docker-registry/data:/data
+      - ./certs:/certs
+      - /mnt/raid/registry:/data
